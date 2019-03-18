@@ -1,0 +1,94 @@
+body
+{
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+.img_logo
+{
+  max-height: 130px;
+}
+
+.navegacion
+{
+  text-align: right;
+}
+
+.slogan
+{
+  font-size: 40px;
+  margin-top: 5%;
+  font-style: italic;
+  margin-bottom: 0px !important;
+  margin-left: 5% !important;
+}
+
+.header
+{
+  padding-top: 5px;
+}
+
+@media (min-width:400px) and (max-width:600px)
+{
+  .logo
+  {
+    padding: 5px!important;
+  }
+
+  .navegacion
+  {
+    padding-right: 0px!important;
+    padding-top: 10px!important;
+  }
+
+  .btn-small
+  {
+    padding-left: 3px;
+    transform: scale(.9);
+  }
+
+  .img_logo
+  {
+    max-height: 100px;
+  }
+
+  .slogan
+  {
+    font-size: 23px;
+    margin-top: 20%;
+  }
+}
+
+
+@media (max-width:400px)
+{
+  .logo
+  {
+    padding: 5px!important;
+  }
+
+  .navegacion
+  {
+    padding-right: 0px!important;
+    padding-top: 10px!important;
+  }
+
+  .btn-small
+  {
+    padding-left: 0px !important;
+    transform: scale(.8);
+  }
+
+  .img_logo
+  {
+    max-height: 100px;
+  }
+
+  .slogan
+  {
+    font-size: 23px;
+    margin-top: 23%;
+  }
+}
