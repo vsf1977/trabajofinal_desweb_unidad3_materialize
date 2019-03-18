@@ -30,6 +30,24 @@ body
   padding-top: 5px;
 }
 
+.img-social
+{
+  width: 40px;
+}
+
+.redes_sociales
+{
+  display: flex;
+  flex-flow: column;
+}
+
+div[class*="visor"] > img
+{
+  width: 100%;
+  border: 2px black solid;
+}
+
+
 @media (min-width:400px) and (max-width:600px)
 {
   .logo
@@ -58,6 +76,11 @@ body
   {
     font-size: 23px;
     margin-top: 20%;
+  }
+
+  .segmento > div
+  {
+    margin-top: 10px;
   }
 }
 
