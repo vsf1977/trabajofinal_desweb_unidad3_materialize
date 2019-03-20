@@ -9,7 +9,10 @@
     <title>Tus sueños volarán!!</title>
   </head>
   <body>
-      <div class="row header">
+    <header>
+      <div class="fondo">
+      </div>
+      <div class="row encabezado">
           <div class="col s2 m2 l2 offset-l1 offset-m1 logo">
             <img src="img/logo.png" class="img_logo" alt="">
           </div>
@@ -31,7 +34,10 @@
             </div>
           </div>
       </div>
-      <div class="row imagenes">
+    </header>
+    <main>
+      <section>
+        <div class="row imagenes">
           <div class="col s1 m1 hide-on-small-only redes_sociales">
             <a href="#"><img src="img/facebook.png" alt="facebook" class="img-social"></a>
             <a href="#"><img src="img/twitter.png" alt="twitter" class="img-social"></a>
@@ -50,8 +56,60 @@
             <img src="img/img3.jpg" class="z-depth-3" alt="imagen3">
             <img src="img/img4.jpg" class="z-depth-3" alt="imagen4">
           </div>
-      </div>
-      <script type="text/javascript" script src="js/materialize.min.js"></script>
-      <script type="text/javascript" script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        </div>
+      </section>
+      <section>
+        <div class="row secciones">
+          <div class="col s12 m8 l8 seccion-1">
+            <div class="entrada white clearfix">
+              <img src="img/zoo.jpg" class="z-depth-3" alt="Zoológico">
+              <h5>Zoo de Barranquilla</h5>
+              <div class="chip">
+                <i class="material-icons">event</i>15/12/2018
+              </div>
+              <div class="chip">
+                <i class="material-icons">location_on</i>Barranquilla, Colombia
+              </div>
+                <p>El Zoológico de la ciudad de Barranquilla tuvo un discreto inicio en la década de los años treinta, cuando Don Tomás Suri Salcedo regaló a la Sociedad de Mejoras Públicas un amplio lote de su propiedad, colindante con el barrio "El Prado", diagonal al Estadio Municipal. Allí, la entidad instaló un pequeño parque-vivero, el cual inició su colección con unas palomas domésticas que Don Roberto Puyana, presidente de la Sociedad de Mejoras Públicas, trajo de su casa.
+                En agosto de 1952, este parque-vivero fue trasladado a otro sector de la ciudad por cuestiones de ampliación urbanística.  El nuevo parque, ubicado en la Calle 77 con Carrera 58 (hoy Carrera 68), barrio La Concepción, contaba con un lote de varias hectáreas de terreno fértil y plano y fue nombrado en honor a uno de sus más entusiastas gestores, Roberto Puyana, quien siempre quiso que Barranquilla, su ciudad adoptiva, fuera "la ciudad de los parques".</p>
+            </div>
+          </div>
+          <div class="col s12 m4 l4 info seccion-2">
+            <div class="info-autor teal lighten-1">
+              <img src="img/foto.jpg" class="responsive-img circle foto" alt="foto">
+              <h5>Perfil del Autor</h5>
+              <hr>
+              <p>Ingeniero de sistemas, con 5 años experiencia en desarrollo de soluciones
+              informáticas, desarrollo de aplicaciones en VB.net, Java, Android Studio, C#;
+              recolección, análisis, diseño y desarrollo de sistemas de información;
+              conocimientos en Oracle, Mysql, SQL Server y desarrollo Web (Java Script,
+              Php, Html).</p>
+            </div>
+          </div>
+          <div class="col s12 m8 l8 seccion-3">
+            <div class="comentarios teal lighten-1 clearfix">
+             <h5>Deja tu comentario</h5>
+             <div class="input-field col s6">
+               <i class="material-icons prefix">account_circle</i>
+               <input id="icon_prefix" type="text" class="validate" placeholder="Nombre">
+             </div>
+             <div class="input-field col s6">
+               <i class="material-icons prefix">email</i>
+               <input id="icon_email" type="email" class="validate" placeholder="Correo electronico">
+             </div>
+             <div class="input-field col s12">
+               <i class="material-icons prefix">comment</i>
+               <textarea id="textarea1" class="materialize-textarea"  placeholder="Comentarios"></textarea>
+             </div>
+             <div class="input-field col s12">
+               <a class="waves-effect waves-light btn"><i class="material-icons left">create</i>Enviar</a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" script src="js/materialize.min.js"></script>
+    <script type="text/javascript" script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   </body>
 </html>

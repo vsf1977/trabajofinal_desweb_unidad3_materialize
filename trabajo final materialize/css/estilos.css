@@ -6,6 +6,15 @@ body
   background-attachment: fixed;
 }
 
+.fondo
+{
+  height: 150px;
+  width: 100%;
+  background:rgb(199,161,64);
+  position: fixed;
+  z-index: -1;
+}
+
 .img_logo
 {
   max-height: 130px;
@@ -18,16 +27,19 @@ body
 
 .slogan
 {
-  font-size: 40px;
-  margin-top: 5%;
+  font-size: 50px;
+  margin-top: 3%;
   font-style: italic;
   margin-bottom: 0px !important;
   margin-left: 5% !important;
+  color:teal;
+  text-shadow: black 0.05em 0.05em 0.01em;
+
 }
 
-.header
+.encabezado
 {
-  padding-top: 5px;
+  padding: 5px;
 }
 
 .img-social
@@ -47,12 +59,76 @@ div[class*="visor"] > img
   border: 2px black solid;
 }
 
+.entrada > img
+{
+  max-width: 40%;
+  border: 1px black solid;
+  float: left;
+  margin-right: 8px;
+}
+
+.entrada, .info-autor, .comentarios
+{
+  padding: 10px !important;
+}
+.entrada > p
+{
+  text-align: justify;
+}
+
+.entrada > h5
+{
+  margin-top: 0px;
+}
+
+.material-icons
+{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.clearfix:before,
+.clearfix:after {
+        display: table;
+        content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.comentarios > h5
+{
+  margin-left: 20px;
+}
+
+.input-field > input
+{
+  color: black !important;
+}
+
+.btn
+{
+  float: right;
+}
+
+.info-autor
+{
+  text-align:center;
+}
+
+.foto
+{
+  width:35%;
+}
 
 @media (min-width:400px) and (max-width:600px)
 {
-  .logo
+  .img_logo
   {
-    padding: 5px!important;
+    max-width: 300%;
   }
 
   .navegacion
@@ -67,31 +143,38 @@ div[class*="visor"] > img
     transform: scale(.9);
   }
 
-  .img_logo
-  {
-    max-height: 100px;
-  }
-
   .slogan
   {
     font-size: 23px;
     margin-top: 20%;
   }
 
-  .segmento > div
+  .info
   {
-    margin-top: 10px;
+    padding: 30px !important;
   }
-}
 
+  .secciones
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seccion-2
+  {
+    order :3;
+  }
+
+  .seccion-3
+  {
+    margin-top: 15px;
+    order :2;
+  }
+
+}
 
 @media (max-width:400px)
 {
-  .logo
-  {
-    padding: 5px!important;
-  }
-
   .navegacion
   {
     padding-right: 0px!important;
@@ -106,12 +189,40 @@ div[class*="visor"] > img
 
   .img_logo
   {
-    max-height: 100px;
+    max-width: 300%;
   }
 
   .slogan
   {
     font-size: 23px;
-    margin-top: 23%;
+    margin-top: 15%;
   }
+
+  .info
+  {
+    padding: 30px !important;
+  }
+
+  .secciones
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seccion-2
+  {
+    order :3;
+  }
+
+  .seccion-3
+  {
+    margin-top: 15px;
+    order :2;
+  }
+
+  .fondo
+  {
+    height: 120px;
+  }
+
 }
